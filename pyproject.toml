@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "sqla-with-migration"
+version = "0.1.0"
+description = ""
+authors = ["greenpea88 <green_pea88@naver.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+SQLAlchemy = "^1.4.27"
+click = "^8.0.3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

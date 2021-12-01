@@ -10,6 +10,8 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     username = Column(String)
 
+    def __repr__(self):
+        return f'id = {self.id}, username = {self.username}'
 
 class Post(Base):
     __tablename__ = "posts"

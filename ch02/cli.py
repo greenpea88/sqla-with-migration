@@ -59,6 +59,17 @@ def delete_user(user_id=None, ):
         session.commit()
         click.echo(f'user: user:{user_id} deleted.')
 
+@cli.add_command
+@click.command()
+@click.argument('username')
+def get_user(username=None,):
+    with Session() as session:
+        user = session.query(User).filter_by(username=username).all()
+        print(user)
+        if not user:
+            click.echo(f'user:{username} not found.')
+            return
+        click.echo(f'user: {user}')
 
 if __name__ == "__main__":
     cli()
