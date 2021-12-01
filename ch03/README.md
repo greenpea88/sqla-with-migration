@@ -1,4 +1,5 @@
 # ch03
+use postgreSQL >> need to change "user" and "password" in 'app > db > __ init__.py > my_dsn'
 
 ## add dependencies
 
